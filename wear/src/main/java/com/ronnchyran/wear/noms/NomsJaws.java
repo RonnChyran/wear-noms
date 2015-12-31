@@ -35,7 +35,7 @@ public class NomsJaws {
     public NomsJaws(Context watchContext){
         this.watchContext = watchContext;
         this.previousTimeText = "";
-        Bitmap mouth = BitmapFactory.decodeResource(watchContext.getResources(), R.mipmap.mouth);
+        Bitmap mouth = BitmapFactory.decodeResource(watchContext.getResources(), R.mipmap.mouth_anim00);
         mouthWidth = mouth.getWidth();
         mouthHeight = mouth.getHeight();
         mouthFrames = new Bitmap[]{

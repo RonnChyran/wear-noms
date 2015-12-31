@@ -104,7 +104,6 @@ public class NomsWatchFaceService extends CanvasWatchFaceService {
             super.onAmbientModeChanged(inAmbientMode);
             watchFace.setInAmbientMode(inAmbientMode);
             watchFace.setAntiAlias(!inAmbientMode);
-            watchFace.setColor(inAmbientMode ? Color.GRAY : Color.WHITE);
             invalidate();
             if(!inAmbientMode){
                 System.gc();

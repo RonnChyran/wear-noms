@@ -29,7 +29,7 @@ public class NomsBackground {
         canvas.drawBitmap(!ambient ? this.face : this.face_ambient,
                 new Rect(0, 0, face.getWidth(), face.getHeight()),
                 new RectF(0, 0, bounds.width(), bounds.height()),
-                null
+                !ambient ?  new Paint(Paint.FILTER_BITMAP_FLAG) : null
         );
         canvas.drawBitmap(eyes,
                 new Rect(0, 0, eyes.getWidth(), eyeHeight),
